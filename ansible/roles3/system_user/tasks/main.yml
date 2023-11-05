@@ -1,0 +1,6 @@
+- name: Create system user
+  user:
+    name: "{{ system_user_name }}"
+    password: "{{ system_user_password | password_hash('sha512') }}"
+    shell: /bin/bash
+

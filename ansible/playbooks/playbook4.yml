@@ -1,0 +1,8 @@
+---
+- name: install packages, downlaod git repo and run app with pm2
+  hosts: all
+  become: yes
+  roles:
+    - software_installation
+    - git_clone
+    - run_app

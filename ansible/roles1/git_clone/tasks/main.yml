@@ -1,0 +1,6 @@
+---
+- name: Clone the repository
+  git:
+    repo: "{{ repo_url }}"
+    dest: /opt/nodejs
+

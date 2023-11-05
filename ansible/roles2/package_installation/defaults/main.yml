@@ -1,0 +1,3 @@
+httpd_package: httpd
+php_package: php
+git_package: git

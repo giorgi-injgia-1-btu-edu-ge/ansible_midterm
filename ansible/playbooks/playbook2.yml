@@ -1,0 +1,9 @@
+- name: Setup Web Server, User, and Backup Directory
+  hosts: all
+  become: yes
+  
+  roles:
+    - package_installation
+    - system_user
+    - backup_directroy
+    - copy_files

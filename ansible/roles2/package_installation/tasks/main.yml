@@ -1,0 +1,8 @@
+- name: Install httpd, php, and git
+  yum:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - "{{ httpd_package }}"
+    - "{{ php_package }}"
+    - "{{ git_package }}"

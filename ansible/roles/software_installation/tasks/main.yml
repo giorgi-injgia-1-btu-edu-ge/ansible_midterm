@@ -1,0 +1,12 @@
+---
+- name: Install Nginx, Node.js, PM2, and Git
+  yum:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - nginx
+    - nodejs
+    - git
+
+- name: Install PM2 using npm
+  command: npm install -g pm2

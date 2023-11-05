@@ -1,0 +1,9 @@
+---
+- name: task 1 2 3
+  hosts: all
+  become: yes
+  roles:
+    - software_installation
+    - git_clone
+    - run_app
+    - nginx_config

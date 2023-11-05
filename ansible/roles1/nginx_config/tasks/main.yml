@@ -1,0 +1,12 @@
+---
+- name: Copy Nginx configuration
+  copy:
+    src: "{{ nginx_config_src }}"
+    dest: "{{ nginx_config_dest }}"
+    owner: root
+    group: root
+
+- name: Start Nginx service
+  service:
+    name: "{{ nginx_service_name }}"
+    state: started

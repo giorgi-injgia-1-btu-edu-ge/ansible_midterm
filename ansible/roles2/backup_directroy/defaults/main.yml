@@ -1,0 +1,3 @@
+backup_directory_path: /opt/backup
+backup_directory_owner: upload
+backup_directory_permissions: "664"

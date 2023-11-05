@@ -1,0 +1,7 @@
+- name: Copy /etc/localtime and /etc/hosts
+  copy:
+    src: "{{ item }}"
+    dest: "{{ backup_directory_path }}/{{ item | basename }}"
+  with_items:
+    - /etc/localtime
+    - /etc/hosts

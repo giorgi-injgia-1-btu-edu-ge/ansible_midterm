@@ -1,0 +1,4 @@
+nginx_config_src: "{{ role_path }}/files/nginx_conf.conf"
+nginx_config_dest: /etc/nginx/default.d
+nginx_service_name: nginx
+
